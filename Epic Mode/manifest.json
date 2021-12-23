@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Epic Mode",
+  "description": "Epic Mode - Make browsing epic",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_title": "Epic Mode",
+    "default_popup": "popout.html"
+  },
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  }
+}

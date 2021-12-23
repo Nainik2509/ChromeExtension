@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "PopOut",
+  "description": "Pop Out Extension Music",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_title": "Popout HTML",
+    "default_popup": "popout.html"
+  }
+}

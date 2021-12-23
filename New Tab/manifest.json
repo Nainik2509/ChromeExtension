@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+  "name": "New Tab",
+  "description": "Chrome Extension which display content on the new tab.",
+  "version": "1.0.0",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}

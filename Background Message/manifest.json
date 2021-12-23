@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Background Message",
+  "description": "Chrome Extension which listens in the background",
+  "version": "1.0.0",
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

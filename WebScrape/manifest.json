@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Web Scraper",
+  "description": "A simple Web Scraper",
+  "version": "1.0.0",
+  "permissions": ["<all_urls>"],
+  "browser_action": {
+    "default_title": "Simple Scrapper",
+    "default_popup": "popout.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

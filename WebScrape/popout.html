@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Scrapper</title>
+    <style>
+      body {
+        max-height: 500px;
+        overflow: auto;
+        width: 300px;
+      }
+      select {
+        width: 55px;
+      }
+      input {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Setup Scraper</h1>
+
+    <div class="commands-list">
+      <div class="command-item">
+        <select>
+          <option value="wait">Wait</option>
+          <option value="click">Click</option>
+          <option value="enter">Enter</option>
+          <option value="save">Save</option>
+        </select>
+        <input class="value-1" placeholder="200ms" />
+        <!-- <- wait time or querySelector  -->
+        <input class="value-2" placeholder="Optional" />
+        <!--  <- E.g is entering data -->
+      </div>
+    </div>
+    <div class="action-buttons">
+      <button class="new-command">Add Command</button>
+      <button class="run-command">Run</button>
+    </div>
+    <textarea style="display: none"></textarea>
+    <script src="popout.js"></script>
+  </body>
+</html>
